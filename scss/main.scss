@@ -247,6 +247,7 @@ nav{
 }
 
 .auctions-punks{
+    margin-bottom: 120px;
     .auctions-punks-container{
         display: flex;
         justify-content: space-between;
@@ -264,7 +265,7 @@ nav{
                 padding: 35px;
                 border-radius: 28px;
                 border: 1px solid var(--gray);
-                transition: 600ms;
+                transition: 400ms;
                 h1{
                     font-family: var(--font-family);
                     font-weight: 400;
@@ -273,8 +274,90 @@ nav{
                 }
             }
             .auction-card:hover{
-                transition: 600ms;
+                transition: 400ms;
                 background: #638596;
+            }
+        }
+    }
+}
+
+.largest-sales{
+    border-radius: 25px 25px 0 0;
+    background-color: #fff;
+    .largest-sales-container{
+        max-width: 1300px;
+        margin: auto;
+        .largest-sales-view-all{
+            padding-top: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 100px;
+            h1{
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: 40px;
+                line-height: 129%;
+                letter-spacing: -0.04em;
+                color: var(--background);
+            }
+            button{
+                border: 1px solid rgba(16, 17, 17, 0.2);
+                border-radius: 100px;
+                width: 149px;
+                height: 61px;
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 20px;
+                background: none;
+            }
+        }
+        .largest-sales-card{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            .largest-card{
+                img{
+                    width: 400px;
+                    height: 400px;
+                }
+                h1{
+                    font-family: var(--font-family);
+                    font-weight: 500;
+                    font-size: 26px;
+                    line-height: 150%;
+                    color: var(--background);
+                }
+                h3{
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 17px;
+                    line-height: 155%;
+                    color: var(--background);
+                    margin-bottom: 15px;
+                }
+                p{
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 17px;
+                    color: var(--gray);
+                }
+            }
+        }
+        .largest-swiper{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            button{
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid rgba(16, 17, 17, 0.2);
+                border-radius: 65px;
+                width: 65px;
+                height: 65px;
+                background: none;
             }
         }
     }
